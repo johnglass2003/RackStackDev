@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://rackstack.dev', // update this once you have your actual domain
 	integrations: [
 		starlight({
 			title: 'RackStack',
