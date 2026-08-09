@@ -7,7 +7,7 @@ export default defineConfig({
 	site: 'https://rackstackdev.com',
 	integrations: [
 		starlight({
-			title: 'RackStack',
+			title: 'rackstackdev',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{ label: 'Linux & Systems', items: [{ autogenerate: { directory: 'linux-systems' } }] },
