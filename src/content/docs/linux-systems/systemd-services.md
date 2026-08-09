@@ -106,8 +106,6 @@ Reliability, uptime, monitoring / observability, automation, self-healing, fault
 
 > "Built and deployed a host health-check agent as a self-healing systemd service, automating reliability monitoring and surviving reboots without manual intervention."
 
-Note: hard metrics specific to your project and what it accomplishes are gold for your resume.
-
 ## References
 
 - [systemd.unit(5) man page — freedesktop.org](https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html)

@@ -62,6 +62,5 @@ If you remember one thing, remember this:
 - [DMTF Redfish Specification — dmtf.org](https://www.dmtf.org/standards/redfish)
 - [Intel IPMI Specification v2.0 — intel.com](https://www.intel.com/content/www/us/en/products/docs/servers/ipmi/ipmi-second-gen-interface-spec-v2-rev1-1.html)
 - [IPMI Security Best Practices — US-CERT](https://www.cisa.gov/news-events/alerts/2013/07/26/risks-using-intelligent-platform-management-interface-ipmi)
-- [Dan Farmer: IPMI: Freight Train to Hell (2013)](https://fish2.com/ipmi/itrain.pdf)
 - [DMTF Redfish Schema Bundle — dmtf.org](https://redfish.dmtf.org/schemas/)
 - [RFC 3411 — SNMP Architecture](https://datatracker.ietf.org/doc/html/rfc3411)
