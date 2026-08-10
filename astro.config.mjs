@@ -7,8 +7,10 @@ export default defineConfig({
 	site: 'https://rackstackdev.com',
 	integrations: [
 		starlight({
-			title: 'rackstackdev',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'RackStack',
+			titleDelimiter: '—',
+			description: 'Practical resources for breaking into data center infrastructure and cloud systems careers.',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/johnglass2003/RackStack' }],
 			sidebar: [
 				{ label: 'Linux & Systems', items: [{ autogenerate: { directory: 'linux-systems' } }] },
 				{ label: 'Scripting & Automation', items: [{ autogenerate: { directory: 'scripting-automation' } }] },
