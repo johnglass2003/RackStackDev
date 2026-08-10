@@ -90,22 +90,6 @@ WantedBy=multi-user.target
 | `Restart=` | Auto-restart behavior |
 | `WantedBy=` | Which boot target enables the service |
 
-## Resume takeaway
-
-### Keywords worth working in
-
-Reliability, uptime, monitoring / observability, automation, self-healing, fault tolerance, production services, scalability, and distributed systems.
-
-### Project ideas
-
-1. **Host health-check agent** A background service that checks CPU, memory, and disk usage on a schedule and logs anything abnormal. Runs continuously, restarts itself if it crashes, and survives a reboot.
-2. **Log watcher / alerting stub** A service that watches a log file for error patterns and writes a summary when it finds one.
-3. **Uptime monitor for a list of endpoints** A service that checks a list of URLs or hosts on an interval and logs whether each one is up and how fast it responded. You can extend this into a dashboard.
-
-### Sample bullet
-
-> "Built and deployed a host health-check agent as a self-healing systemd service, automating reliability monitoring and surviving reboots without manual intervention."
-
 ## References
 
 - [systemd.unit(5) man page — freedesktop.org](https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html)

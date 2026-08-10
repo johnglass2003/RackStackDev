@@ -3,7 +3,7 @@ title: Terminology
 description: Key terms and definitions for BMC, Redfish, and IPMI concepts in data center infrastructure.
 sidebar:
   label: Terminology
-  order: 5
+  order: 6
 ---
 
 - **BMC** - Baseboard Management Controller; the embedded controller that gives you out-of-band access to a server.

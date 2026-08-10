@@ -97,22 +97,6 @@ That is where you will usually find temperatures and fan information.
 
 Redfish is the direction new hardware management is moving. It is the one you should prefer when you have a choice, especially for automation that needs to be reliable across vendors.
 
-## Resume takeaway
-
-### Keywords worth working in
-
-Redfish API, REST/JSON infrastructure APIs, out-of-band management, fleet automation, hardware monitoring, multi-vendor hardware management, bare-metal provisioning
-
-### Project ideas
-
-1. **Redfish inventory collector** A script or tool that pulls host, chassis, and firmware information from a list of BMCs and outputs structured JSON or CSV. Good for audits, onboarding, and fleet reporting.
-2. **Hardware health monitor** A small service that polls Redfish thermal and power data and alerts when temperatures, fans, or power draw look abnormal.
-3. **Redfish client crate** A Rust library that wraps common Redfish operations like session creation, GET requests, and power actions. This is a strong project if you want something that feels real and reusable.
-
-### Sample bullet
-
-> Built a Rust Redfish client library for querying server inventory and power state across multi-vendor BMCs, enabling automated hardware management workflows.
-
 ## References
 
 - [DMTF Redfish Specification — dmtf.org](https://www.dmtf.org/standards/redfish)

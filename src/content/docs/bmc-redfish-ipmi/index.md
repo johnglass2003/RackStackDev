@@ -16,4 +16,5 @@ A Baseboard Management Controller (BMC) is a small independent chip on a server 
 | [Protocol Landscape](./protocol-landscape) | IPMI and Redfish |
 | [IPMI in Practice](./ipmi-in-practice) | ipmitool and core commands |
 | [Redfish in Practice](./redfish-in-practice) | REST/JSON model, resource types, auth, first API calls, automation at scale |
+| [Resume Advice](./resume-advice) | What BMC, IPMI, and Redfish work is worth highlighting |
 | [Terminology](./terminology) | Reference glossary for terms used across this section |
