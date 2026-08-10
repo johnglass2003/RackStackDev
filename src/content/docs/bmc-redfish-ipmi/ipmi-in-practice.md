@@ -72,6 +72,10 @@ IPMI has a weak security story compared with modern management APIs. The two thi
 - IPMI should not be reachable from untrusted networks
 - Do not assume the BMC is safe just because it is “internal”
 
+The classic example is cipher 0, which allows authentication with no real encryption or integrity protection on some badly configured systems. Older BMCs also commonly ship with weak credentials, outdated firmware, and management paths that do not give you modern TLS-style protections.
+
+In practice, treat IPMI as a high-risk management surface: keep it on a separate management network, disable weak cipher suites if the platform allows it, rotate default credentials immediately, and prefer Redfish for new automation when you have the option.
+
 ## Where it still shows up
 
 You will still see IPMI in:

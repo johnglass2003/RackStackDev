@@ -6,11 +6,13 @@ sidebar:
   order: 2
 ---
 
-You will mostly deal with three management protocols in datacenter work: IPMI, Redfish, and SNMP. The useful mental model is:
+You will mostly deal with three management protocols in datacenter work: IPMI, Redfish, and SNMP.
 
-- IPMI: old, common, and still everywhere on older hardware
-- Redfish: modern, standardized, and the direction new hardware is moving
-- SNMP: mostly for monitoring and network gear, not the default choice for new server-management automation
+| Protocol | Best use | Reality |
+| --- | --- | --- |
+| IPMI | Legacy server management | Still common on older fleets, but awkward and weaker on security |
+| Redfish | New server-management automation | Structured, vendor-standardized, and easier to build against |
+| SNMP | Monitoring and traps | Common on network gear and older environments, not a great base for control workflows |
 
 ## IPMI
 
@@ -18,13 +20,13 @@ IPMI is the older standard. It is still common on older servers and is usually t
 
 - Transport: UDP 623, usually over RMCP
 - Typical use: power control, sensors, event log, console access, inventory
-- Reality: it is older, less consistent, and often feels more tooling-heavy than Redfish
+- Reality: it is older, less consistent, and comes with more security baggage than Redfish
 
-If you need to work with old hardware, you will likely run into IPMI and tools like ipmitool.
+If you need to work with old hardware, you will likely run into IPMI and tools like `ipmitool`.
 
 ## Redfish
 
-Redfish is the modern standard. It is the one you should prefer for new automation.
+Redfish is the modern standard.
 
 - Transport: HTTP/HTTPS
 - Payloads: JSON
@@ -32,7 +34,7 @@ Redfish is the modern standard. It is the one you should prefer for new automati
 - Typical use: power control, sensors, logs, inventory, configuration
 - Why it matters: it is standardized across vendors, so one client can often work across Dell, HPE, Lenovo, and others
 
-A good rule is: if the hardware supports Redfish, use Redfish.
+A good rule is: if the hardware supports Redfish and you are building new automation, start there.
 
 ## SNMP
 
@@ -40,7 +42,7 @@ SNMP is older than both. You will see it a lot in networking gear, PDUs, UPS sys
 
 - It is mostly about polling values and receiving traps
 - It is useful for monitoring, but not the best base for modern server-management automation
-- In practice, you will encounter it, but you usually would not build new server-management workflows on top of it
+- In practice, you will encounter it, but you usually would not build new power-control or provisioning workflows on top of it
 
 ## What matters on the job
 
@@ -48,14 +50,7 @@ SNMP is older than both. You will see it a lot in networking gear, PDUs, UPS sys
 - In many fleets, you will find a mix of old and new systems
 - Before writing automation, check what the target actually supports
 - If you are debugging a BMC issue, know which protocol your tool is speaking
-
-## Quick reference
-
-If you remember one thing, remember this:
-
-- IPMI = old, common, and still real
-- Redfish = modern, standardized, and preferred
-- SNMP = monitoring/legacy tooling, not your default path for new server automation
+- If security matters, IPMI usually needs more caution and tighter network isolation than Redfish
 
 ## References
 

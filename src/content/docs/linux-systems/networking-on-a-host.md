@@ -52,6 +52,8 @@ dig <hostname>
 curl -v http://<host>:<port>
 ```
 
+6. If it is listening but still unreachable, check the local firewall with `iptables -L -n`, `nft list ruleset`, or `firewall-cmd --list-all` depending on the host.
+
 ## What matters
 
 - `0.0.0.0:<port>` means listening on all IPv4 interfaces.

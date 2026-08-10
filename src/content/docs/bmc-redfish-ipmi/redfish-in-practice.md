@@ -89,6 +89,7 @@ That is where you will usually find temperatures and fan information.
 ## Practical notes
 
 - `-k` is common because BMCs often use self-signed certificates
+- `-k` is fine for quick lab checks, but production automation should verify TLS properly by trusting the BMC certificate or a CA that issued it instead of skipping verification
 - Use session auth for anything more than a quick one-off check
 - If a vendor firmware is older, some fields or actions may be missing
 - The API is structured JSON, so it is much easier to automate than IPMI
